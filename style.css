@@ -214,13 +214,27 @@ header a:hover{
 }
 /***------------------footer------------------***/
 footer{
-    background: #222222;
     width: 100%;
     height: 80px;
     position: relative;
-    color: #ddd8ce;
+    background: #222222;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    text-indent: -100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
+}
+
+.footer a{
+    color: #ddd8ce;
 }
