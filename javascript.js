@@ -1,1 +1,3 @@
-console.log('JavaScript');
+function showCode(){
+    alert('codesouce');
+}

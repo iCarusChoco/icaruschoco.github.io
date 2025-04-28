@@ -19,59 +19,168 @@
             <nav></nav>
         </header>
         <main>
-            <section class="section s1">
-                <div class="parallax p1">
-                    <div class="profile">
-                        <img src="img/icon.jpg" alt="image-icon" class="imgIcon">
-                        <h1>Hello! I am Sam! Welcome to my personal website!</h1>    
-                    </div>
+            <section class="section sIntro">
+                <div class="parallax pIntro">
+                    <h1>Hello! I am Sam! Welcome to my personal website!</h1>
                 </div>
-                <div class="contect">
-                    <p>I written this website by myself. I use it for recording some idea about HTML/CSS development and testing some function.</p>
-                    <p>I am very interested in programming language. Although I don't having any programming course before I finished my secondary school, I still spend so much time on learn different programming language. Such as Java, javaScript, C#, C++, HTML/CSS etc...</p>
+                <div class="contect cIntro">
+                    <h3>I written this website by myself. I use it for recording some idea about HTML/CSS development and testing some function.
+                        <br><br>I am very interested in programming language. Although I don't having any programming course before I finished my secondary school
+                        <br><br>I still spend so much time on learn different programming language. Such as Java, javaScript, C#, C++, HTML/CSS etc...</h3>
                 </div>
             </section>
-            <section class="section s2">
-                <div class="parallax p2">
-                    <div class="title">
-                        <h1>Gaming and Software development and say hello to the world</h1>
-                        <p>Let's talk about how did I get start on this.</p>
-                        <button>Hello World!!!</button>
-                    </div>
+            <section class="section sIndexCode">
+                <div class="parallax pIndexCode">
+                    <h1>I make up this page by CSS.</h1>
+                    <p class="pgIndexCode pgicHTML">
+                        &lt;div class="parallax p1"&gt;&lt;/div&gt;
+                        <br>&lt;div class="contect"&gt;&lt;/div&gt;
+                        <br>&lt;div class="parallax p2"&gt;&lt;/div&gt;
+                        <br>&lt;div class="contect"&gt;&lt;/div&gt;
+                        <br>&lt;div class="parallax p3"&gt;&lt;/div&gt;
+                        <br>&lt;div class="contect"&gt;&lt;/div&gt;
+                    </p>
+                    <p class="pgIndexCode pgicCSS">
+                        .parallax{
+                        <br>&emsp;width: 100%;
+                        <br>&emsp;height: 80vh;
+                        <br>&emsp;position: relative;
+                        <br>&emsp;overflow: hidden;
+                        <br>&emsp;background-repeat: no-repeat;
+                        <br>&emsp;background-size: cover;
+                        <br>&emsp;background-position: center;
+                        <br>&emsp;background-attachment: fixed;
+                        <br>}
+                        <br>
+                        <br>.p1{ background-image: url(img/background_img_01.jpg); }
+                        <br>.p2{ background-image: url(img/background_img_02.jpg); }
+                        <br>.p3{ background-image: url(img/background_img_03.jpg); }
+                        <br>
+                        <br>.contect{
+                        <br>&emsp;width: 100%;
+                        <br>&emsp;height: 40vh;
+                        <br>&emsp;margin: 0 auto;
+                        <br>}
+                    </p>
                 </div>
-                <div class="contect">
-                    <p>Java is the first programming language of my life. As like as other, the "Hello world!" class is the first programm that I written and run on the world.</p>
-                    <h2>"I wanna design my own game!"</h2>
-                    <p>This is the reason I start my learning. So I first join the course about gaming and software development. But when I spend a year on studing gaming development, I relized i can do more but only the gameing development.</p>    
+                <div class="contect cIndexCode">
+                    <div class="btnList">
+                        <a href="javascript:;" onclick="showCode('indexHTML')" class="showMore sHTMLIndexCode">HTML</a>
+                        <a href="javascript:;" onclick="showCode('indexCSS')" class="showMore sCSSIndexCode">CSS</a>
+                    </div>
                 </div>
             </section>
-            <section class="section s3">
-                <div class="parallax p3">
-                    <div class="objectList">
-                        <div class="object o1">
-                            <img src="img/object_01.jpg" alt="cat" class="imgCat">
-                            <h3>Cat</h3>
-                            <p>This is a cat lying on floor.</p>
+            <section class="section sObjectFacing">
+                <div class="parallax pObjectFacing">
+                    <div class="ofObjectList">
+                        <div class="ofObject oJava">
+                            <img src="img/java.png" alt="java" class="imgJava">
+                            <h3>Java</h3>
+                            <p>Java runs on the Java Virtual Machine (JVM), allowing code to execute on any platform with a compatible JVM.</p>
                         </div>
-                        <div class="object o2">
-                            <img src="img/object_02.jpg" alt="phone" class="imgPhone">
-                            <h3>Phone</h3>
-                            <p>This is a phone under the river.</p>
+                        <div class="ofObject oCsharp">
+                            <img src="img/csharp.png" alt="Csharp" class="imgCsharp">
+                            <h3>C# (C Sharp)</h3>
+                            <p>C# operates within the .NET framework, using the Common Language Runtime (CLR) to manage execution and memory.</p>
                         </div>
-                        <div class="object 03">
-                            <img src="img/object_03.jpg" alt="deer" class="imgDeer">
-                            <h3>Deer</h3>
-                            <p>This is a deer from Japan.</p>
+                        <div class="ofObject oJava">
+                            <img src="img/cplusplus.png" alt="Cplusplus" class="imgCplusplus">
+                            <h3>C++ (C plus plus)</h3>
+                            <p>C++ compiles directly to machine code, providing high performance and control over system resources.</p>
+                        </div>
+                        <div class="ofObject oJava">
+                            <img src="img/html.png" alt="HTML" class="imgHTML">
+                            <h3>HTML</h3>
+                            <p>HTML structures web content, which browsers interpret to display text, images, and links.</p>
+                        </div>
+                        <div class="ofObject oJava">
+                            <img src="img/mysql.png" alt="MySQL" class="imgMySQL">
+                            <h3>MySQL</h3>
+                            <p>MySQL uses SQL to manage data in relational tables, supporting queries for data retrieval and manipulation.</p>
                         </div>
                     </div>
                 </div>
-                <div class="contect">
-                    <div>
-                        <p>Things above is just a part of my work.</p>
-                        <p>Everytime come up some ideas or finding something news, I wiil back to here and wpdate my website.</p>
-                        <p>You can keep contect on me through my social media!</p>
+                <div class="contect cObjectFacing">
+                    <h2>I have learn above programming language.</h2>
+                    <h3>When you pointing any object, other object will facing on the object that you pointing.</h3>
+                </div>
+            </section>
+            <section class="scetion sObjectFacingCode">
+                <div class="parallax pObjectFacingCode">
+                    <h1>I make up above transform by CSS.</h1>
+                    <p class="pgObjectFacingCode pgofcHTML">
+                        &lt;img src="img/img01.png" alt="01" class="img01"&gt;
+                        <br>&lt;h3&gt;title&lt;/h3&gt;
+                        <br>&lt;p&gt;text&lt;/p&gt;
+                        <br>&lt;img src="img/img02.png" alt="02" class="img02"&gt;
+                        <br>&lt;h3&gt;title&lt;/h3&gt;
+                        <br>&lt;p&gt;text&lt;/p&gt;
+                        <br>&lt;img src="img/img03.png" alt="03" class="img03"&gt;
+                        <br>&lt;h3&gt;title&lt;/h3&gt;
+                        <br>&lt;p&gt;text&lt;/p&gt;
+                        <br>&lt;img src="img/img04.png" alt="04" class="img04"&gt;
+                        <br>&lt;h3&gt;title&lt;/h3&gt;
+                        <br>&lt;p&gt;text&lt;/p&gt;
+                        <br>&lt;img src="img/img05.png" alt="05" class="img05"&gt;
+                        <br>&lt;h3&gt;title&lt;/h3&gt;
+                        <br>&lt;p&gt;text&lt;/p&gt;
+                    </p>
+                    <div class="dObjectFacingCode">
+                        <p class="pgObjectFacingCode pgofcCSS">
+                            .objectList{
+                            <br>&emsp;position: relative;
+                            <br>&emsp;min-width: 1000px;
+                            <br>&emsp;display: flex;
+                            <br>&emsp;justify-content: center;
+                            <br>&emsp;align-content: center;
+                            <br>&emsp;flex-wrap: wrap;
+                            <br>&emsp;transform-style: preserve-3d;
+                            <br>&emsp;perspective: 900px;
+                            <br>}
+                            <br>
+                            <br>.object{
+                            <br>&emsp;width: 250px;
+                            <br>&emsp;height: 250px;
+                            <br>&emsp;transition: .3s;
+                            <br>&emsp;overflow: hidden;
+                            <br>&emsp;transform: rotateY(0);
+                            <br>&emsp;transition-delay: .1s;
+                            <br>}
+                        </p>
+                        <p class="pgObjectFacingCode pgofcCSS">
+                            .objectList:hover .object{
+                            <br>&emsp;transform: rotateY(20deg);
+                            <br>}
+                            <br>
+                            <br>.objectList .object:hover{
+                            <br>&emsp;transform: rotateY(0deg) scale(1.25);
+                            <br>&emsp;box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+                            <br>&emsp;height: 350px;
+                            <br>&emsp;z-index: -1;
+                            <br>}
+                            <br>
+                            <br>.objectList .object:hover~.object{
+                            <br>&emsp;transform: rotateY(-20deg);
+                            <br>}
+                            <br>
+                        </p>
                     </div>
-                    <div class="social">
+                </div>
+                <div class="contect cObjectFacingCode">
+                    <div class="btnList">
+                        <a href="javascript:;" onclick="showCode('ObjectFacingHTML')" class="showMore sObjectFacingCode">HTML</a>
+                        <a href="javascript:;" onclick="showCode('ObjectFacingCSS')" class="showMore sObjectFacingCode">CSS</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section sClosing">
+                <div class="parallax pClosing">
+                    <h1>Things above is just a part of my work.</h1>
+                    <h1>Everytime come up some ideas or finding something news, I wiil back to here and update my website.</h1>
+                    <h1>You can keep contect on me through my social media!</h1>
+                </div>
+                <div class="contect cClosing">
+                    <div class="socialMediaList">
                         <a href="#" class="socialMedia"><img src="img/icon_Facebook.png" class="imgFacebook"></a>
                         <a href="#" class="socialMedia"><img src="img/icon_Instergram.png" class="imgInstergram"></a>
                         <a href="#" class="socialMedia"><img src="img/icon_Whatsapp.png" class="imgWhatsapp"></a>
@@ -81,7 +190,7 @@
             </section>
         </main>
         <footer>
-            <div class="item-footer">
+            <div class="itemOnFooter">
                 <a href="mailto:pangkwokhei000322@gmail.com">Email : pangkwokhei000322@gmail.com</a>
                 <a>Copyright © 2025 PANG Kwok Hei Sam</a>
             </div>
