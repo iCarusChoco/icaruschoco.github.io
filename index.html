@@ -32,7 +32,7 @@
             <section class="section sIndexCode">
                 <div class="parallax pIndexCode">
                     <h1>I make up this page by CSS.</h1>
-                    <p class="pgIndexCode pgicHTML">
+                    <p class="pgIndexCode pgicHTML" id="indexHTML" style="visibility: hidden;">
                         &lt;div class="parallax p1"&gt;&lt;/div&gt;
                         <br>&lt;div class="contect"&gt;&lt;/div&gt;
                         <br>&lt;div class="parallax p2"&gt;&lt;/div&gt;
@@ -40,7 +40,7 @@
                         <br>&lt;div class="parallax p3"&gt;&lt;/div&gt;
                         <br>&lt;div class="contect"&gt;&lt;/div&gt;
                     </p>
-                    <p class="pgIndexCode pgicCSS">
+                    <p class="pgIndexCode pgicCSS" id="indexCSS" style="visibility: hidden;">
                         .parallax{
                         <br>&emsp;width: 100%;
                         <br>&emsp;height: 80vh;
@@ -67,6 +67,7 @@
                     <div class="btnList">
                         <a href="javascript:;" onclick="showCode('indexHTML')" class="showMore sHTMLIndexCode">HTML</a>
                         <a href="javascript:;" onclick="showCode('indexCSS')" class="showMore sCSSIndexCode">CSS</a>
+                        <a href="javascript:;" onclick="showCode('indexHide')" class="showMore sCSSIndexCode">Hide</a>
                     </div>
                 </div>
             </section>
@@ -108,7 +109,7 @@
             <section class="scetion sObjectFacingCode">
                 <div class="parallax pObjectFacingCode">
                     <h1>I make up above transform by CSS.</h1>
-                    <p class="pgObjectFacingCode pgofcHTML">
+                    <p class="pgObjectFacingCode pgofcHTML" id="ObjectFacingHTML" style="visibility: hidden;">
                         &lt;img src="img/img01.png" alt="01" class="img01"&gt;
                         <br>&lt;h3&gt;title&lt;/h3&gt;
                         <br>&lt;p&gt;text&lt;/p&gt;
@@ -125,51 +126,45 @@
                         <br>&lt;h3&gt;title&lt;/h3&gt;
                         <br>&lt;p&gt;text&lt;/p&gt;
                     </p>
-                    <div class="dObjectFacingCode">
-                        <p class="pgObjectFacingCode pgofcCSS">
-                            .objectList{
-                            <br>&emsp;position: relative;
-                            <br>&emsp;min-width: 1000px;
-                            <br>&emsp;display: flex;
-                            <br>&emsp;justify-content: center;
-                            <br>&emsp;align-content: center;
-                            <br>&emsp;flex-wrap: wrap;
-                            <br>&emsp;transform-style: preserve-3d;
-                            <br>&emsp;perspective: 900px;
-                            <br>}
-                            <br>
-                            <br>.object{
-                            <br>&emsp;width: 250px;
-                            <br>&emsp;height: 250px;
-                            <br>&emsp;transition: .3s;
-                            <br>&emsp;overflow: hidden;
-                            <br>&emsp;transform: rotateY(0);
-                            <br>&emsp;transition-delay: .1s;
-                            <br>}
-                        </p>
-                        <p class="pgObjectFacingCode pgofcCSS">
-                            .objectList:hover .object{
-                            <br>&emsp;transform: rotateY(20deg);
-                            <br>}
-                            <br>
-                            <br>.objectList .object:hover{
-                            <br>&emsp;transform: rotateY(0deg) scale(1.25);
-                            <br>&emsp;box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
-                            <br>&emsp;height: 350px;
-                            <br>&emsp;z-index: -1;
-                            <br>}
-                            <br>
-                            <br>.objectList .object:hover~.object{
-                            <br>&emsp;transform: rotateY(-20deg);
-                            <br>}
-                            <br>
-                        </p>
-                    </div>
+                    <p class="pgObjectFacingCode pgofcCSS" id="ObjectFacingCSS" style="visibility: hidden;">
+                        .objectList{
+                        <br>&emsp;position: relative;
+                        <br>&emsp;min-width: 1000px;
+                        <br>&emsp;display: flex;
+                        <br>&emsp;justify-content: center;
+                        <br>&emsp;align-content: center;
+                        <br>&emsp;flex-wrap: wrap;
+                        <br>&emsp;transform-style: preserve-3d;
+                        <br>&emsp;perspective: 900px;
+                        <br>}
+                        <br>.object{
+                        <br>&emsp;width: 250px;
+                        <br>&emsp;height: 250px;
+                        <br>&emsp;transition: .3s;
+                        <br>&emsp;overflow: hidden;
+                        <br>&emsp;transform: rotateY(0);
+                        <br>&emsp;transition-delay: .1s;
+                        <br>}
+                        <br>.objectList:hover .object{
+                        <br>&emsp;transform: rotateY(20deg);
+                        <br>}
+                        <br>.objectList .object:hover{
+                        <br>&emsp;transform: rotateY(0deg) scale(1.25);
+                        <br>&emsp;box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+                        <br>&emsp;height: 350px;
+                        <br>&emsp;z-index: -1;
+                        <br>}
+                        <br>.objectList .object:hover~.object{
+                        <br>&emsp;transform: rotateY(-20deg);
+                        <br>}
+                        <br>
+                    </p>
                 </div>
                 <div class="contect cObjectFacingCode">
                     <div class="btnList">
                         <a href="javascript:;" onclick="showCode('ObjectFacingHTML')" class="showMore sObjectFacingCode">HTML</a>
                         <a href="javascript:;" onclick="showCode('ObjectFacingCSS')" class="showMore sObjectFacingCode">CSS</a>
+                        <a href="javascript:;" onclick="showCode('ObjectFacingHide')" class="showMore sObjectFacingCode">Hide</a>
                     </div>
                 </div>
             </section>
