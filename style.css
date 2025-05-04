@@ -140,7 +140,8 @@ header a:hover{
 }
 /***------------------index code------------------***/
 .pIndexCode h1{
-    margin: 10px;
+    position: relative;
+    margin: 10px 0 25%;
     padding: 10px;
     border-radius: 5px;
     background: #ddd8ceaa;
@@ -148,6 +149,7 @@ header a:hover{
 }
 
 .pgIndexCode{
+    position: absolute;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -216,7 +218,7 @@ header a:hover{
 }
 /***------------------object facing code------------------***/
 .pObjectFacingCode h1{
-    margin: 10px;
+    margin: 10px 0 34%;
     padding: 10px;
     border-radius: 5px;
     background: #ddd8ceaa;
@@ -224,15 +226,12 @@ header a:hover{
 }
 
 .pgObjectFacingCode{
+    position: absolute;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     background: #ddd8ceee;
     color: #222222;
-}
-
-.dObjectFacingCode{
-    display: flex;
 }
 /***------------------closing------------------***/
 .pClosing h1{
